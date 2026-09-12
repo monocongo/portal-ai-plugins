@@ -1,0 +1,28 @@
+{
+  "name": "@spotify/portal-ai-plugins",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Set up, diagnose, search, and operate Spotify Portal through focused Portal CLI workflows.",
+  "keywords": [
+    "pi-package",
+    "developer-portal",
+    "software-catalog",
+    "service-ownership",
+    "backstage"
+  ],
+  "license": "Apache-2.0",
+  "homepage": "https://backstage.spotify.com/docs/portal",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/spotify/portal-ai-plugins.git"
+  },
+  "pi": {
+    "extensions": [
+      "./.pi-plugin/index.js"
+    ],
+    "skills": [
+      "./skills"
+    ]
+  }
+}
