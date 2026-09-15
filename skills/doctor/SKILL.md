@@ -17,15 +17,16 @@ Use only the command for the current host:
 ```bash
 claude plugin list --json
 codex plugin list --available --json
+pi list
 ```
 
 In Cursor, inspect the installed plugin through **Cursor Settings → Plugins**.
 Do not assume a Cursor plugin-list CLI command exists.
 
-Confirm whether `portal` is installed and enabled, and record its
-reported version. If the installed version is current but the visible commands
-have older descriptions, recommend `/reload-plugins` in Claude Code or a new
-session in the current host.
+Confirm whether `portal` is installed and enabled, and record its source and
+reported version when available. If the installed version is current but the
+visible commands have older descriptions, recommend `/reload-plugins` in
+Claude Code, `/reload` in Pi, or a new session in the current host.
 
 Run the corresponding plugin command with `--help` first if its JSON syntax is
 not supported by the installed host version.
